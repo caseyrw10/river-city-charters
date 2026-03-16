@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>River City Charters | Elite Wakeboarding</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Archivo:wght@400;600;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="fixed w-full">
+        <div class="header-container flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-custom text-3xl font-bold">directions_boat</span>
+                <span class="text-3xl font-black italic heading-font">RIVER CITY</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <button class="btn-primary button-slant">Book</button>
+                <button class="text-white bg-transparent border-none cursor-pointer flex items-center">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section relative h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <video autoplay loop muted playsinline class="w-full h-full object-cover" poster="https://lh3.googleusercontent.com/aida-public/AB6AXuBeHIIPQrxdkoX9riWpeV8AJiWo_JxMVWFCsETmJWB8qDJfo6HrgBpDAHiEjdZTwM_QeXVZiLkTLdfTG3J6vtV2qDMqmMUzV3btjLtOidZsD55u-kswVB6mVZnEdN1Yq96FkTX5PxByXGx_Azuwp-6H_skxvuxFDzaTrEUgiui1iRnKN0qiyk94b1nbvx5COPT0Az4OAvbXk89fg6YRPlVLBKdvgr20r2yAe1TlWQX0r7zgS0iPX0l0srfaj2b1VYLohCVKnTgABjCH">
+                    <source src="https://player.vimeo.com/external/453185360.sd.mp4?s=3ca9353995f3b7d1e89f816c747196013a7c6460&profile_id=165" type="video/mp4">
+                </video>
+                <div class="absolute inset-0 hero-gradient"></div>
+            </div>
+            
+            <div class="relative z-10 text-center container fade-in-up mt-20">
+                <div class="badge inline-block mb-4 px-3 py-1 bg-deep-blue border-custom">
+                    <span class="text-xs font-black uppercase tracking-widest text-custom italic">Unleash the River</span>
+                </div>
+                <h1 class="text-[84px] text-white italic mb-6">
+                    LET'S MAKE<br>
+                    <span class="text-custom neon-glow-text">WAVES</span>
+                </h1>
+                <p class="text-lg text-secondary mx-auto mb-10 max-w-md">
+                    Premium wakeboarding & surfing with pro coaching on crystal clear waters. River City Charters provides the ultimate experience.
+                </p>
+                
+                <div class="hero-actions flex flex-col gap-4 items-center">
+                    <button class="btn-action button-slant round-full">Ride Now</button>
+                    <button class="btn-text flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-muted mt-4 hover-white">
+                        <span class="material-symbols-outlined">play_circle</span>
+                        View Action
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+<!-- Core Services Section -->
+        <section class="py-24 bg-dark-surface relative overflow-hidden">
+            <div class="container relative z-10 fade-in-up">
+                <div class="mb-16 section-skew">
+                    <h2 class="text-5xl italic mb-4">Our Services</h2>
+                    <div style="height: 6px; width: 120px; background-color: var(--color-custom);"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 relative z-10">
+                    <div class="service-card round-full" style="border-radius: 20px;">
+                        <span class="material-symbols-outlined icon-bg">surfing</span>
+                        <h3 class="text-3xl italic mb-4">Chartering</h3>
+                        <p class="text-muted font-medium mb-6">Experience the river on our premium boats with an experienced captain. Enjoy beautiful sights and sunny weather.</p>
+                        <div class="text-custom font-black uppercase flex items-center gap-2">
+                            Explore <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" style="border-left-color: var(--color-electric-blue); border-radius: 20px;">
+                        <span class="material-symbols-outlined icon-bg">sports_handball</span>
+                        <h3 class="text-3xl italic mb-4">Wake Sports</h3>
+                        <p class="text-muted font-medium mb-6">Wakeboarding, surfing, and skiing for all skill levels. We provide top-tier gear and coaching so you can hit the water.</p>
+                        <div style="color: var(--color-electric-blue)" class="font-black uppercase flex items-center gap-2">
+                            Meet Squad <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lake Life Gallery Section -->
+        <section class="py-24 bg-deep-blue">
+            <div class="container fade-in-up">
+                <div class="mb-12 flex justify-between items-end" style="transform: rotate(1deg);">
+                    <h2 class="text-5xl italic">Lake Life</h2>
+                    <p class="text-custom font-black text-xs uppercase">Full Throttle</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="gallery-item aspect-4-5">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuApsSzIa-WoyQhpYEuLeFuDb7Nt7UD1wGWGKsvILgQIUjvVYdpAlIDTTzNUHBaN2-y51X8fXENdFIAVxRTG8_TIplFGvHG8WmOVpUCvvQ_XOBJHPZQQN1VhelUUqNDDNlX4l_M8cKVN7fLgHUYqIgAW9AzBdp3enlDZZ-S1jWat8xTNlfQzAsTlnaEc2O0ynFCeT9fI1E6C2zaF2Hm4tXulM2PdMJlKXXeTSPkobaV-PFNKXMjeLXkwoB-8WIla_ceMdkmfdoiUJP7W" alt="Air Time">
+                        <div class="gallery-overlay">
+                            <span class="text-custom font-black italic text-2xl uppercase">Air Time</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item aspect-16-9 md:aspect-4-5">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjdg5YDoGJCnC4eSBQtI15EestMzE2ld6swqLZ3bF_AjPuy3dX9uie6QzoRGrbrBLWhlhzEAtt5zcp3p-Aa7JgApmrVYsZ8pf62_pLjThmxA9omjm_GA7MRxft0O2j_KadFS0_CpGth8fFbQ4z-hCL-Cilhnq6JiXemznzeNDrsA0h_kApzGylYCijkUgablAtA1fTzwFTfobJ_eWKcEA1MNy0EoI9KCZ7dFlWGKRt33sdgojsyHSV0rcesbKHsXPhcanIg3fpai5Y" alt="The Wake">
+                        <div class="gallery-overlay">
+                            <span class="text-custom font-black italic text-2xl uppercase">The Wake</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="py-24 bg-dark-surface fade-in-up">
+            <div class="container">
+                <div class="text-center mb-16" style="transform: rotate(-2deg);">
+                    <h2 class="text-5xl italic mb-4">Pricing Plans</h2>
+                    <div style="height: 4px; width: 80px; background-color: var(--color-custom); margin: 0 auto;"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 items-center max-w-4xl mx-auto">
+                    <div class="pricing-card">
+                        <h3 class="text-2xl italic mb-6">Hourly Blast</h3>
+                        <div class="flex flex-col gap-2 mb-8">
+                            <div class="flex items-baseline gap-2">
+                                <span class="text-6xl font-black italic text-white">$175</span>
+                                <span class="text-muted font-bold">/HR</span>
+                            </div>
+                        </div>
+                        <ul class="mb-10 text-muted font-medium" style="list-style: none;">
+                            <li class="flex items-center gap-2 mb-3"><span class="material-symbols-outlined text-custom text-lg">check_circle</span> 6 Riders Max</li>
+                            <li class="flex items-center gap-2 mb-3"><span class="material-symbols-outlined text-custom text-lg">check_circle</span> Pro Equipment Included</li>
+                            <li class="flex items-center gap-2 mb-3"><span class="material-symbols-outlined text-custom text-lg">check_circle</span> Gas Included</li>
+                        </ul>
+                        <button class="w-full py-4 text-white font-black uppercase round-full mt-4" style="background-color: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.2);">Select</button>
+                    </div>
+
+                    <div class="pricing-card featured round-full" style="border-radius: 36px; padding: 3rem 2rem;">
+                        <div class="absolute top-0 right-10 bg-custom text-white font-black px-4 py-2 uppercase text-xs" style="border-radius: 0 0 10px 10px;">Best Value</div>
+                        <h3 class="text-2xl italic mb-6 text-white">Half Day Charter</h3>
+                        <div class="flex flex-col gap-2 mb-8">
+                            <div class="flex items-baseline gap-2">
+                                <span class="text-6xl font-black italic text-white">$650</span>
+                                <span style="color: rgba(255,255,255,0.6);" class="font-bold">/4HRS</span>
+                            </div>
+                        </div>
+                        <ul class="mb-10 text-white font-medium" style="list-style: none;">
+                            <li class="flex items-center gap-2 mb-3"><span class="material-symbols-outlined text-custom text-lg">check_circle</span> 8 Riders Max</li>
+                            <li class="flex items-center gap-2 mb-3"><span class="material-symbols-outlined text-custom text-lg">check_circle</span> Photo & Video Pack</li>
+                            <li class="flex items-center gap-2 mb-3"><span class="material-symbols-outlined text-custom text-lg">check_circle</span> Cooler with Ice & Water</li>
+                        </ul>
+                        <button class="w-full py-4 bg-custom text-white font-black uppercase button-slant round-full">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-24 bg-deep-blue fade-in-up">
+            <div class="container max-w-md mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-6xl italic text-custom mb-4">Send It</h2>
+                    <p class="text-muted font-medium">Ready to ride? Drop your coordinates.</p>
+                </div>
+                <form>
+                    <input class="form-input round-full" placeholder="NAME" type="text" required />
+                    <input class="form-input round-full" placeholder="EMAIL" type="email" required />
+                    <textarea class="form-input" placeholder="MESSAGE..." rows="4" required></textarea>
+                    <button class="w-full py-4 bg-electric-blue text-white font-black text-xl uppercase button-slant mt-4 round-full shadow-xl" style="transition: transform 0.2s;" onmousedown="this.style.transform='scale(0.98)'" onmouseup="this.style.transform='scale(1)'">Submit Session</button>
+                </form>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="bg-dark-surface pt-16 pb-16 text-center border-t" style="border-color: rgba(255,255,255,0.05);">
+            <div class="container fade-in-up">
+                <div class="flex items-center justify-center gap-2 mb-8">
+                    <span class="material-symbols-outlined text-custom text-4xl font-bold">directions_boat</span>
+                    <span class="text-3xl font-black italic heading-font">RIVER CITY CHARTERS</span>
+                </div>
+                <div class="flex justify-center gap-6 mb-8 text-muted">
+                    <span class="material-symbols-outlined cursor-pointer hover:text-white transition-colors">public</span>
+                    <span class="material-symbols-outlined cursor-pointer hover:text-white transition-colors">camera</span>
+                    <span class="material-symbols-outlined cursor-pointer hover:text-white transition-colors">smart_display</span>
+                </div>
+                <p class="text-xs text-muted font-black" style="letter-spacing: 0.2em;">© 2026 RIVER CITY CHARTERS / PREMIUM WATER SPORTS</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

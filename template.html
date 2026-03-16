@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LET'S MAKE WAVES | ELITE WAKEBOARDING</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&amp;family=Archivo:wght@400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00f3ff",
+                        "electric-blue": "#2e5bff",
+                        "deep-blue": "#050a14",
+                        "dark-surface": "#0a101d",
+                        "neon-accent": "#00f3ff",
+                    },
+                    fontFamily: {
+                        "display": ["Barlow Condensed", "sans-serif"],
+                        "body": ["Archivo", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body { 
+                @apply bg-deep-blue text-slate-100 font-body antialiased overflow-x-hidden;
+            }
+            h1, h2, h3, .heading-font { 
+                @apply font-display font-black uppercase tracking-tighter leading-none; 
+            }
+        }
+        .angled-bg {
+            clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+        }
+        .section-skew {
+            @apply -rotate-2 origin-left;
+        }
+        .neon-glow-text {
+            text-shadow: 0 0 15px rgba(0, 243, 255, 0.6);
+        }
+        .neon-border {
+            box-shadow: 0 0 20px rgba(46, 91, 255, 0.3);
+        }
+        .hero-gradient {
+            background: linear-gradient(to top, #050a14 0%, rgba(5, 10, 20, 0.4) 50%, rgba(5, 10, 20, 0.2) 100%);
+        }
+        .button-slant {
+            clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen">
+<header class="fixed top-0 left-0 right-0 z-50 bg-deep-blue/80 backdrop-blur-xl border-b border-electric-blue/20">
+<div class="flex items-center justify-between px-5 py-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-neon-accent text-3xl font-bold">bolt</span>
+<span class="text-3xl font-black italic heading-font tracking-tight">WAKE</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-electric-blue text-white px-5 py-1.5 font-black uppercase text-xs button-slant hover:bg-neon-accent hover:text-black transition-colors">
+                Book
+            </button>
+<button class="text-white">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<video autoplay="" class="w-full h-full object-cover scale-110" loop="" muted="" playsinline="" poster="https://lh3.googleusercontent.com/aida-public/AB6AXuBeHIIPQrxdkoX9riWpeV8AJiWo_JxMVWFCsETmJWB8qDJfo6HrgBpDAHiEjdZTwM_QeXVZiLkTLdfTG3J6vtV2qDMqmMUzV3btjLtOidZsD55u-kswVB6mVZnEdN1Yq96FkTX5PxByXGx_Azuwp-6H_skxvuxFDzaTrEUgiui1iRnKN0qiyk94b1nbvx5COPT0Az4OAvbXk89fg6YRPlVLBKdvgr20r2yAe1TlWQX0r7zgS0iPX0l0srfaj2b1VYLohCVKnTgABjCH">
+<source src="https://player.vimeo.com/external/453185360.sd.mp4?s=3ca9353995f3b7d1e89f816c747196013a7c6460&amp;profile_id=165" type="video/mp4"/>
+</video>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 text-center px-6 pt-20">
+<div class="mb-4 inline-block bg-electric-blue/30 backdrop-blur-md border border-neon-accent/50 px-3 py-1 -skew-x-12">
+<span class="text-[10px] font-black uppercase tracking-[0.3em] text-neon-accent italic">Maximum Adrenaline</span>
+</div>
+<h1 class="text-[84px] leading-[0.75] mb-6 neon-glow-text italic">
+                LET'S MAKE <br/>
+<span class="text-neon-accent">WAVES</span>
+</h1>
+<p class="text-lg text-slate-300 max-w-xs mx-auto mb-10 font-semibold leading-tight">
+                Premium wakeboarding &amp; surfing with pro coaching on crystal clear waters.
+            </p>
+<div class="flex flex-col gap-4">
+<button class="bg-neon-accent text-black py-6 px-10 font-black text-xl uppercase tracking-widest button-slant shadow-[0_0_40px_rgba(0,243,255,0.4)] active:scale-95 transition-all">
+                    Ride Now
+                </button>
+<button class="flex items-center justify-center gap-2 text-sm font-bold uppercase tracking-widest text-white/70">
+<span class="material-symbols-outlined">play_circle</span>
+                    View Action
+                </button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-symbols-outlined text-neon-accent">keyboard_double_arrow_down</span>
+</div>
+</section>
+<section class="px-6 py-24 bg-dark-surface relative overflow-hidden">
+<div class="absolute top-20 -right-20 opacity-10">
+<h2 class="text-[180px] font-black italic -rotate-90">EXTREME</h2>
+</div>
+<div class="relative z-10 mb-16 section-skew">
+<h2 class="text-7xl italic text-white/5 absolute -top-10 left-0 leading-none">CORE GEAR</h2>
+<h2 class="text-5xl italic relative">Our Services</h2>
+<div class="h-1.5 w-32 bg-electric-blue mt-4"></div>
+</div>
+<div class="grid gap-8 relative z-10">
+<div class="group bg-deep-blue border-l-4 border-neon-accent p-8 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-8xl">surfing</span>
+</div>
+<h3 class="text-3xl italic mb-4">Wake Surfing</h3>
+<p class="text-slate-400 font-medium mb-6">Infinite waves for all levels. Pro ballast systems for the perfect swell.</p>
+<div class="text-neon-accent font-black uppercase tracking-tighter flex items-center gap-2">
+                    Check Waves <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<div class="group bg-deep-blue border-l-4 border-electric-blue p-8 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-8xl">sports_handball</span>
+</div>
+<h3 class="text-3xl italic mb-4">Pro Coaching</h3>
+<p class="text-slate-400 font-medium mb-6">Master your first pop-up or advanced 360s with certified elite trainers.</p>
+<div class="text-electric-blue font-black uppercase tracking-tighter flex items-center gap-2">
+                    Meet Squad <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-deep-blue">
+<div class="px-6 mb-12 flex justify-between items-end rotate-1">
+<h2 class="text-5xl italic">Lake Life</h2>
+<p class="text-neon-accent font-black text-[10px] uppercase tracking-widest pb-2">Full Throttle</p>
+</div>
+<div class="space-y-4 px-4">
+<div class="relative aspect-[4/5] overflow-hidden group border-4 border-white/5">
+<img class="w-full h-full object-cover grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApsSzIa-WoyQhpYEuLeFuDb7Nt7UD1wGWGKsvILgQIUjvVYdpAlIDTTzNUHBaN2-y51X8fXENdFIAVxRTG8_TIplFGvHG8WmOVpUCvvQ_XOBJHPZQQN1VhelUUqNDDNlX4l_M8cKVN7fLgHUYqIgAW9AzBdp3enlDZZ-S1jWat8xTNlfQzAsTlnaEc2O0ynFCeT9fI1E6C2zaF2Hm4tXulM2PdMJlKXXeTSPkobaV-PFNKXMjeLXkwoB-8WIla_ceMdkmfdoiUJP7W"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
+<span class="text-neon-accent font-black italic text-2xl uppercase">Air Time</span>
+</div>
+</div>
+<div class="relative aspect-[16/9] overflow-hidden group border-4 border-white/5">
+<img class="w-full h-full object-cover grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjdg5YDoGJCnC4eSBQtI15EestMzE2ld6swqLZ3bF_AjPuy3dX9uie6QzoRGrbrBLWhlhzEAtt5zcp3p-Aa7JgApmrVYsZ8pf62_pLjThmxA9omjm_GA7MRxft0O2j_KadFS0_CpGth8fFbQ4z-hCL-Cilhnq6JiXemznzeNDrsA0h_kApzGylYCijkUgablAtA1fTzwFTfobJ_eWKcEA1MNy0EoI9KCZ7dFlWGKRt33sdgojsyHSV0rcesbKHsXPhcanIg3fpai5Y"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
+<span class="text-neon-accent font-black italic text-2xl uppercase">The Wake</span>
+</div>
+</div>
+</div>
+</section>
+<section class="px-6 py-24 bg-dark-surface">
+<div class="text-center mb-16 -rotate-2">
+<h2 class="text-5xl italic mb-4">Pricing Plans</h2>
+<div class="h-1 w-20 bg-neon-accent mx-auto"></div>
+</div>
+<div class="space-y-8">
+<div class="bg-deep-blue p-8 border border-white/10 relative overflow-hidden group">
+<h3 class="text-2xl italic mb-6">Hourly Blast</h3>
+<div class="flex items-baseline gap-2 mb-8">
+<span class="text-6xl font-black italic text-white">$150</span>
+<span class="text-slate-500 font-bold">/HR</span>
+</div>
+<ul class="space-y-3 mb-10 text-slate-400 font-medium">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-neon-accent text-lg">check_circle</span> 6 Riders Max</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-neon-accent text-lg">check_circle</span> Pro Equipment</li>
+</ul>
+<button class="w-full py-4 bg-white/5 border border-white/20 font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all">Select</button>
+</div>
+<div class="bg-electric-blue p-10 relative overflow-hidden shadow-[0_20px_50px_rgba(46,91,255,0.4)] -rotate-1">
+<div class="absolute top-0 right-0 bg-neon-accent text-black text-[10px] font-black px-4 py-2 uppercase tracking-tighter">Recommended</div>
+<h3 class="text-2xl italic mb-6 text-white">Half Day</h3>
+<div class="flex items-baseline gap-2 mb-8">
+<span class="text-6xl font-black italic text-white">$500</span>
+<span class="text-white/60 font-bold">/4HRS</span>
+</div>
+<ul class="space-y-3 mb-10 text-white font-medium">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-neon-accent text-lg">check_circle</span> 10 Riders Max</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-neon-accent text-lg">check_circle</span> Photo &amp; Video Pack</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-neon-accent text-lg">check_circle</span> Cooler &amp; Ice</li>
+</ul>
+<button class="w-full py-5 bg-black text-neon-accent font-black uppercase tracking-widest button-slant">Book Best Value</button>
+</div>
+</div>
+</section>
+<section class="px-6 py-24 bg-deep-blue">
+<div class="mb-16 section-skew">
+<h2 class="text-5xl italic">Occasions</h2>
+<div class="h-1.5 w-24 bg-electric-blue mt-4"></div>
+</div>
+<div class="grid gap-6">
+<div class="bg-dark-surface p-8 border-b-4 border-neon-accent flex items-start gap-6">
+<div class="bg-neon-accent/10 p-3">
+<span class="material-symbols-outlined text-4xl text-neon-accent">cake</span>
+</div>
+<div>
+<h3 class="text-2xl italic mb-2">Birthdays</h3>
+<p class="text-slate-400 text-sm font-medium">Private sessions with custom high-energy playlists.</p>
+</div>
+</div>
+<div class="bg-dark-surface p-8 border-b-4 border-electric-blue flex items-start gap-6">
+<div class="bg-electric-blue/10 p-3">
+<span class="material-symbols-outlined text-4xl text-electric-blue">celebration</span>
+</div>
+<div>
+<h3 class="text-2xl italic mb-2">Bachelor Parties</h3>
+<p class="text-slate-400 text-sm font-medium">The ultimate crew outing. High-energy vibes only.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="px-6 py-24 bg-dark-surface relative overflow-hidden">
+<div class="absolute -top-10 -left-10 text-neon-accent/5 italic font-black text-[200px] leading-none">RIDE</div>
+<div class="relative z-10">
+<div class="mb-12 flex items-center gap-4">
+<div class="h-0.5 flex-grow bg-white/10"></div>
+<h2 class="text-4xl italic">Rider Feed</h2>
+<div class="h-0.5 flex-grow bg-white/10"></div>
+</div>
+<div class="space-y-6">
+<div class="bg-deep-blue p-8 border border-white/5 relative">
+<span class="material-symbols-outlined absolute -top-4 right-6 text-5xl text-electric-blue/20">format_quote</span>
+<div class="flex items-center gap-4 mb-6">
+<img alt="Sarah" class="w-14 h-14 rounded-full border-2 border-neon-accent p-0.5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjN8iUopy3ikBrUugjcz1FShMa3SPuY2mtqAlDRP6__N2pEXzOd-Z0TzM-PPINSagfxiWy4fbmpMHtNgnOLYJCGzGazFG43tHw6lALfa7Zv8JEXGGG-Z1bo9eh4AfqMDxVhAEhTxdQ1K0eCPZYl_FlBGSGdF8oeBeIcm1JTe3IZ_TJ6uExlJx9XDT5HA8HfEd-Aevgms2wORbTilA--iUgImC3uLTwpBzPbFf8OGIveC2gRtVilyCl1BH8r7qI7e9XmOJCktB4eTOy"/>
+<div>
+<h4 class="font-black italic text-lg">Sarah Jenkins</h4>
+<div class="flex text-neon-accent scale-75 origin-left">
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1">star</span>
+</div>
+</div>
+</div>
+<p class="text-slate-300 font-medium italic leading-relaxed">"Best waves we've ever found! The boat is top tier and our coach was incredibly patient."</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 bg-gradient-to-b from-dark-surface to-electric-blue/30">
+<div class="text-center mb-12">
+<h2 class="text-5xl italic mb-4">Capture Action</h2>
+<p class="text-slate-300 font-medium px-4">Social-ready edits of your best runs.</p>
+</div>
+<div class="grid gap-4">
+<div class="relative aspect-video group overflow-hidden border-2 border-neon-accent/30">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgIxacaeuorQQR_vMXaNgYHg7VfzQV71Nbu0CfTBSE2kgil5GwQWBHT3IYhViIfPYTVs2UI8xRXCDGy_KcHZYve9ir-hGB-W95YN0LSajiAACsIP7XtASEuru9EIIBtu5rtz08T1h34sdKKiYK5RF4c-m8b4LVJlPITvMXSAVGK7Uq5vLT084ZRAnZcBP6ruSU300KAOs7tBN4MI1lWHk1QYTe3-E1WZNFs6rLdcOtxc8VBdqlYbNJVxY7-A2ktGgQZO3iP5WTcuPO"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 bg-neon-accent text-black flex items-center justify-center -skew-x-12 shadow-[0_0_20px_rgba(0,243,255,0.5)]">
+<span class="material-symbols-outlined text-4xl skew-x-12 translate-x-0.5">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="relative aspect-video group overflow-hidden border-2 border-white/10">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlnTHzgG0_gBZfVWRBKYGAzuibWVdsF7shBbXMxOeqQvl39hUgAoqva-ZXizFVxxOPFMISLhIpGAORBnsl_eDb52A4f-HEieQ4_aR1avAbU9L-BW1AKJDXh79IzfbLfaR46ZUqLMfkT5IsVhPsFvBv2RjWL9vYlsKAsS8e8BLQz_ZDpHIHzrZn_SXtdlAUqvno8cD7nCV3r1QxAOcjwGihHDTyX-pXcbRi-PU5cBCwPv4ugFbDTxuS_vwHfegDu3FWiZhNy8Unwlvq"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 bg-white/20 backdrop-blur-md text-white flex items-center justify-center -skew-x-12">
+<span class="material-symbols-outlined text-4xl skew-x-12 translate-x-0.5">play_arrow</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="px-6 py-24 bg-deep-blue">
+<div class="mb-12 section-skew">
+<h2 class="text-5xl italic">Availability</h2>
+<p class="text-neon-accent font-black text-xs uppercase tracking-widest mt-2">Pick Your Slot</p>
+</div>
+<div class="bg-dark-surface border border-white/5 overflow-hidden">
+<div class="flex items-center justify-between p-6 bg-electric-blue text-white">
+<button class="material-symbols-outlined">chevron_left</button>
+<span class="font-black italic text-xl uppercase tracking-tighter">August 2024</span>
+<button class="material-symbols-outlined">chevron_right</button>
+</div>
+<div class="p-6">
+<div class="grid grid-cols-7 gap-2 text-center text-[10px] font-black uppercase text-slate-500 mb-4">
+<span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+</div>
+<div class="grid grid-cols-7 gap-1">
+<div class="aspect-square flex items-center justify-center text-slate-700">28</div>
+<div class="aspect-square flex items-center justify-center text-slate-700">29</div>
+<div class="aspect-square flex items-center justify-center text-slate-700">30</div>
+<div class="aspect-square flex items-center justify-center text-slate-700">31</div>
+<div class="aspect-square flex items-center justify-center hover:bg-white/5 cursor-pointer font-bold">1</div>
+<div class="aspect-square flex items-center justify-center hover:bg-white/5 cursor-pointer font-bold">2</div>
+<div class="aspect-square flex items-center justify-center bg-neon-accent text-black font-black">3</div>
+</div>
+<div class="mt-8 grid grid-cols-2 gap-3">
+<button class="py-4 bg-neon-accent/10 border-2 border-neon-accent text-neon-accent font-black italic">08:00 AM</button>
+<button class="py-4 bg-white/5 border-2 border-transparent text-slate-500 font-black italic">11:00 AM</button>
+</div>
+</div>
+</div>
+</section>
+<section class="px-6 py-24 bg-dark-surface">
+<div class="mb-12">
+<h2 class="text-6xl italic text-neon-accent mb-4">Send It</h2>
+<p class="text-slate-400 font-medium">Ready to ride? Drop your coordinates.</p>
+</div>
+<form class="space-y-4">
+<input class="w-full bg-deep-blue border-none p-5 focus:ring-2 focus:ring-neon-accent text-white font-bold placeholder:text-slate-600 italic" placeholder="NAME" type="text"/>
+<input class="w-full bg-deep-blue border-none p-5 focus:ring-2 focus:ring-neon-accent text-white font-bold placeholder:text-slate-600 italic" placeholder="EMAIL" type="email"/>
+<textarea class="w-full bg-deep-blue border-none p-5 focus:ring-2 focus:ring-neon-accent text-white font-bold placeholder:text-slate-600 italic" placeholder="MESSAGE..." rows="4"></textarea>
+<button class="w-full py-6 bg-electric-blue text-white font-black uppercase text-xl tracking-widest button-slant shadow-xl active:scale-[0.98] transition-all">Submit Session</button>
+</form>
+</section>
+</main>
+<footer class="bg-deep-blue pt-16 pb-32 px-6 text-center border-t border-white/5">
+<div class="flex items-center justify-center gap-2 mb-8">
+<span class="material-symbols-outlined text-neon-accent text-4xl">bolt</span>
+<span class="text-3xl font-black italic heading-font tracking-tight">WAKE</span>
+</div>
+<div class="flex justify-center gap-6 mb-8 text-slate-500">
+<span class="material-symbols-outlined">public</span>
+<span class="material-symbols-outlined">camera</span>
+<span class="material-symbols-outlined">smart_display</span>
+</div>
+<p class="text-[10px] text-slate-600 uppercase tracking-[0.4em] font-black">© 2024 WAKE LAKE SERVICES / UNLEASH THE BEAST</p>
+</footer>
+<nav class="fixed bottom-0 left-0 right-0 z-50 bg-deep-blue/90 backdrop-blur-xl border-t border-white/5 px-6 pb-8 pt-4">
+<div class="flex justify-around items-center max-w-md mx-auto">
+<a class="flex flex-col items-center gap-1 text-neon-accent" href="#">
+<span class="material-symbols-outlined text-2xl">house</span>
+<span class="text-[8px] font-black uppercase tracking-widest">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined text-2xl">photo_library</span>
+<span class="text-[8px] font-black uppercase tracking-widest">Gallery</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<div class="bg-electric-blue text-white p-3 -mt-10 rounded-full border-4 border-deep-blue shadow-lg">
+<span class="material-symbols-outlined text-2xl">add</span>
+</div>
+<span class="text-[8px] font-black uppercase tracking-widest mt-1">Book</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined text-2xl">payments</span>
+<span class="text-[8px] font-black uppercase tracking-widest">Rates</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined text-2xl">person</span>
+<span class="text-[8px] font-black uppercase tracking-widest">Profile</span>
+</a>
+</div>
+</nav>
+
+</body></html>
