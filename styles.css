@@ -5,7 +5,7 @@
   --color-deep-blue: #050a14;
   --color-dark-surface: #0a101d;
   --color-neon-accent: #00f3ff;
-  --color-custom: #f2460d; /* Custom color from project settings */
+  --color-custom: #00a8ff; /* Custom color from project settings */
   
   --text-primary: #f1f5f9; /* slate-100 */
   --text-secondary: #cbd5e1; /* slate-300 */
@@ -54,6 +54,9 @@ h1, h2, h3, .heading-font {
 .relative { position: relative; }
 .absolute { position: absolute; }
 .fixed { position: fixed; }
+.inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+.z-0 { z-index: 0; }
+.z-10 { z-index: 10; }
 
 .flex { display: flex; }
 .items-center { align-items: center; }
@@ -66,6 +69,7 @@ h1, h2, h3, .heading-font {
 .w-full { width: 100%; }
 .h-full { height: 100%; }
 .min-h-screen { min-height: 100vh; }
+.h-screen { height: 100vh; }
 .object-cover { object-fit: cover; }
 
 /* Custom Template Utilities */
@@ -129,7 +133,7 @@ button {
   font-size: 1.25rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  box-shadow: 0 0 40px rgba(242, 70, 13, 0.4);
+  box-shadow: 0 0 40px rgba(0, 168, 255, 0.4);
   transition: all 0.2s ease;
 }
 
@@ -189,8 +193,28 @@ header {
 .mx-auto { margin-left: auto; margin-right: auto; }
 .max-w-md { max-width: 28rem; }
 .grid { display: grid; }
+.inline-block { display: inline-block; }
+.gap-1 { gap: 0.25rem; }
+.gap-3 { gap: 0.75rem; }
 .gap-6 { gap: 1.5rem; }
 .gap-8 { gap: 2rem; }
+.p-6 { padding: 1.5rem; }
+.max-w-lg { max-width: 32rem; }
+.grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid-cols-7 { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+
+/* Calendar & Misc Utilities */
+.border { border-width: 1px; border-style: solid; }
+.border-2 { border-width: 2px; border-style: solid; }
+.border-transparent { border-color: transparent; }
+.hover\:text-black:hover { color: #000000; }
+.hover\:bg-white\/10:hover { background-color: rgba(255, 255, 255, 0.1); }
+.transition-colors { transition-property: color, background-color, border-color; transition-duration: 200ms; }
+.tracking-tighter { letter-spacing: -0.05em; }
+.tracking-widest { letter-spacing: 0.1em; }
+.cursor-pointer { cursor: pointer; }
+.cursor-not-allowed { cursor: not-allowed; }
+.opacity-50 { opacity: 0.5; }
 
 /* Grid specific to screens */
 @media (min-width: 768px) {
@@ -299,7 +323,7 @@ header {
 .form-input:focus {
   outline: none;
   border-color: var(--color-custom);
-  box-shadow: 0 0 0 2px rgba(242, 70, 13, 0.3);
+  box-shadow: 0 0 0 2px rgba(0, 168, 255, 0.3);
 }
 
 textarea.form-input {

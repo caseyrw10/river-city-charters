@@ -36,24 +36,16 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero-section relative h-screen flex items-center justify-center overflow-hidden">
-            <div class="absolute inset-0 z-0">
-                <video autoplay loop muted playsinline class="w-full h-full object-cover" poster="https://lh3.googleusercontent.com/aida-public/AB6AXuBeHIIPQrxdkoX9riWpeV8AJiWo_JxMVWFCsETmJWB8qDJfo6HrgBpDAHiEjdZTwM_QeXVZiLkTLdfTG3J6vtV2qDMqmMUzV3btjLtOidZsD55u-kswVB6mVZnEdN1Yq96FkTX5PxByXGx_Azuwp-6H_skxvuxFDzaTrEUgiui1iRnKN0qiyk94b1nbvx5COPT0Az4OAvbXk89fg6YRPlVLBKdvgr20r2yAe1TlWQX0r7zgS0iPX0l0srfaj2b1VYLohCVKnTgABjCH">
-                    <source src="https://player.vimeo.com/external/453185360.sd.mp4?s=3ca9353995f3b7d1e89f816c747196013a7c6460&profile_id=165" type="video/mp4">
-                </video>
-                <div class="absolute inset-0 hero-gradient"></div>
-            </div>
+        <section class="hero-section relative h-screen flex items-center justify-center overflow-hidden" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBeHIIPQrxdkoX9riWpeV8AJiWo_JxMVWFCsETmJWB8qDJfo6HrgBpDAHiEjdZTwM_QeXVZiLkTLdfTG3J6vtV2qDMqmMUzV3btjLtOidZsD55u-kswVB6mVZnEdN1Yq96FkTX5PxByXGx_Azuwp-6H_skxvuxFDzaTrEUgiui1iRnKN0qiyk94b1nbvx5COPT0Az4OAvbXk89fg6YRPlVLBKdvgr20r2yAe1TlWQX0r7zgS0iPX0l0srfaj2b1VYLohCVKnTgABjCH'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 z-0 hero-gradient w-full h-full"></div>
             
             <div class="relative z-10 text-center container fade-in-up mt-20">
-                <div class="badge inline-block mb-4 px-3 py-1 bg-deep-blue border-custom">
-                    <span class="text-xs font-black uppercase tracking-widest text-custom italic">Unleash the River</span>
-                </div>
                 <h1 class="text-[84px] text-white italic mb-6">
                     LET'S MAKE<br>
                     <span class="text-custom neon-glow-text">WAVES</span>
                 </h1>
                 <p class="text-lg text-secondary mx-auto mb-10 max-w-md">
-                    Premium wakeboarding & surfing with pro coaching on crystal clear waters. River City Charters provides the ultimate experience.
+                    Premium Wakeboarding and Surfing on Crystal Clear Coeur d'Alene Lake. River City Charters provides the ultimate on-the-water experience.
                 </p>
                 
                 <div class="hero-actions flex flex-col gap-4 items-center">
@@ -66,31 +58,31 @@
             </div>
         </section>
         
-<!-- Core Services Section -->
+        <!-- The Experience Section -->
         <section class="py-24 bg-dark-surface relative overflow-hidden">
             <div class="container relative z-10 fade-in-up">
-                <div class="mb-16 section-skew">
-                    <h2 class="text-5xl italic mb-4">Our Services</h2>
-                    <div style="height: 6px; width: 120px; background-color: var(--color-custom);"></div>
+                <div class="mb-16 section-skew text-center">
+                    <h2 class="text-5xl italic mb-4">The Experience</h2>
+                    <div style="height: 6px; width: 120px; background-color: var(--color-custom); margin: 0 auto;"></div>
                 </div>
 
-                <div class="grid md:grid-cols-2 gap-8 relative z-10">
-                    <div class="service-card round-full" style="border-radius: 20px;">
-                        <span class="material-symbols-outlined icon-bg">surfing</span>
-                        <h3 class="text-3xl italic mb-4">Chartering</h3>
-                        <p class="text-muted font-medium mb-6">Experience the river on our premium boats with an experienced captain. Enjoy beautiful sights and sunny weather.</p>
-                        <div class="text-custom font-black uppercase flex items-center gap-2">
-                            Explore <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                        </div>
+                <div class="grid md:grid-cols-3 gap-8 relative z-10">
+                    <div class="service-card text-center" style="border-left: none; border-bottom: 4px solid var(--color-custom); border-radius: 24px;">
+                        <span class="material-symbols-outlined text-custom inline-block mb-6" style="font-size: 3rem;">directions_boat</span>
+                        <h3 class="text-2xl italic mb-4">Skilled Captain</h3>
+                        <p class="text-muted font-medium">Kick back and relax while our experienced captain navigates the waters, providing a safe and expert ride for all skill levels.</p>
                     </div>
                     
-                    <div class="service-card" style="border-left-color: var(--color-electric-blue); border-radius: 20px;">
-                        <span class="material-symbols-outlined icon-bg">sports_handball</span>
-                        <h3 class="text-3xl italic mb-4">Wake Sports</h3>
-                        <p class="text-muted font-medium mb-6">Wakeboarding, surfing, and skiing for all skill levels. We provide top-tier gear and coaching so you can hit the water.</p>
-                        <div style="color: var(--color-electric-blue)" class="font-black uppercase flex items-center gap-2">
-                            Meet Squad <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                        </div>
+                    <div class="service-card text-center" style="border-left: none; border-bottom: 4px solid var(--color-electric-blue); border-radius: 24px;">
+                        <span class="material-symbols-outlined inline-block mb-6" style="color: var(--color-electric-blue); font-size: 3rem;">surfing</span>
+                        <h3 class="text-2xl italic mb-4">Complete Adventure</h3>
+                        <p class="text-muted font-medium">A full day on the water tailored entirely to your crew. Wakeboarding, surfing, or just cruising—we've got everything you need.</p>
+                    </div>
+
+                    <div class="service-card text-center" style="border-left: none; border-bottom: 4px solid var(--color-custom); border-radius: 24px;">
+                        <span class="material-symbols-outlined text-custom inline-block mb-6" style="font-size: 3rem;">verified_user</span>
+                        <h3 class="text-2xl italic mb-4">Hassle-Free</h3>
+                        <p class="text-muted font-medium">No towing, no cleaning, no stress. Just show up ready to ride and let us handle all the details of your perfect lake day.</p>
                     </div>
                 </div>
             </div>
@@ -131,11 +123,11 @@
 
                 <div class="grid md:grid-cols-2 gap-8 items-center max-w-4xl mx-auto">
                     <div class="pricing-card">
-                        <h3 class="text-2xl italic mb-6">Hourly Blast</h3>
+                        <h3 class="text-2xl italic mb-6">Half Day</h3>
                         <div class="flex flex-col gap-2 mb-8">
                             <div class="flex items-baseline gap-2">
-                                <span class="text-6xl font-black italic text-white">$175</span>
-                                <span class="text-muted font-bold">/HR</span>
+                                <span class="text-6xl font-black italic text-white">$850</span>
+                                <span class="text-muted font-bold">/HALF DAY</span>
                             </div>
                         </div>
                         <ul class="mb-10 text-muted font-medium" style="list-style: none;">
@@ -148,11 +140,11 @@
 
                     <div class="pricing-card featured round-full" style="border-radius: 36px; padding: 3rem 2rem;">
                         <div class="absolute top-0 right-10 bg-custom text-white font-black px-4 py-2 uppercase text-xs" style="border-radius: 0 0 10px 10px;">Best Value</div>
-                        <h3 class="text-2xl italic mb-6 text-white">Half Day Charter</h3>
+                        <h3 class="text-2xl italic mb-6 text-white">Full Day</h3>
                         <div class="flex flex-col gap-2 mb-8">
                             <div class="flex items-baseline gap-2">
-                                <span class="text-6xl font-black italic text-white">$650</span>
-                                <span style="color: rgba(255,255,255,0.6);" class="font-bold">/4HRS</span>
+                                <span class="text-6xl font-black italic text-white">$1,750</span>
+                                <span style="color: rgba(255,255,255,0.6);" class="font-bold">/FULL DAY</span>
                             </div>
                         </div>
                         <ul class="mb-10 text-white font-medium" style="list-style: none;">
@@ -166,12 +158,96 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
+        <!-- Availability Calendar -->
+        <section class="py-24 bg-deep-blue">
+            <div class="container max-w-lg mx-auto fade-in-up">
+                <div class="mb-12 section-skew text-center">
+                    <h2 class="text-5xl italic">Availability</h2>
+                    <p class="text-custom font-black text-xs uppercase tracking-widest mt-2">Pick Your Slot</p>
+                </div>
+                <div class="bg-dark-surface border overflow-hidden" style="border-radius: 20px; border-color: rgba(255,255,255,0.05);">
+                    <div class="flex items-center justify-between p-6 bg-electric-blue text-white">
+                        <button id="prevMonth" class="material-symbols-outlined hover:text-black transition-colors">chevron_left</button>
+                        <span id="monthYearDisplay" class="font-black italic text-xl uppercase tracking-tighter">March 2026</span>
+                        <button id="nextMonth" class="material-symbols-outlined hover:text-black transition-colors">chevron_right</button>
+                    </div>
+                    <div class="p-6">
+                        <!-- Days of Week Header -->
+                        <div class="grid grid-cols-7 gap-2 text-center text-xs font-black uppercase text-muted mb-4">
+                            <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                        </div>
+                        <!-- Days Grid injected by JS -->
+                        <div id="calendarDays" class="grid grid-cols-7 gap-1">
+                            <!-- Dynamic rendering -->
+                        </div>
+                        
+                        <!-- Selected slots display -->
+                        <div id="bookingSlots" class="mt-8 grid grid-cols-2 gap-3" style="display: none;">
+                            <button id="halfDayBtn" class="py-4 bg-custom/10 border-2 text-custom font-black italic" style="border-color: var(--color-custom); border-radius: 12px; background-color: rgba(0, 168, 255, 0.1);">Half Day</button>
+                            <button id="fullDayBtn" class="py-4 border-2 border-transparent text-muted font-black italic hover:text-white transition-colors" style="border-radius: 12px; background-color: rgba(255, 255, 255, 0.05);">Full Day</button>
+                        </div>
+                        <div id="confirmBooking" class="mt-4" style="display: none;">
+                            <button class="w-full py-4 bg-custom text-white font-black uppercase button-slant round-full">Confirm Date</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
         <section class="py-24 bg-deep-blue fade-in-up">
+            <div class="container">
+                <div class="mb-16 section-skew text-center">
+                    <h2 class="text-5xl italic mb-4">Rider Reviews</h2>
+                    <div style="height: 6px; width: 120px; background-color: var(--color-custom); margin: 0 auto;"></div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="p-8 bg-dark-surface" style="border-radius: 20px; border-left: 2px solid var(--color-custom);">
+                        <div class="flex items-center gap-1 text-custom mb-4">
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">star</span>
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">star</span>
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">star</span>
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">star</span>
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">star</span>
+                        </div>
+                        <p class="text-secondary italic mb-6">"Absolute legendary day on the water. The boat was immaculate and the wake was perfect. Best charter in the city!"</p>
+                        <h4 class="font-black uppercase tracking-wider text-sm text-white">— Mike T.</h4>
+                    </div>
+
+                    <div class="p-8 bg-dark-surface" style="border-radius: 20px; border-left: 2px solid var(--color-electric-blue);">
+                        <div class="flex items-center gap-1 text-electric-blue mb-4" style="color: var(--color-electric-blue);">
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">star</span>
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">star</span>
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">star</span>
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">star</span>
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">star</span>
+                        </div>
+                        <p class="text-secondary italic mb-6">"Took the whole family out and the captain was amazing with the kids. We didn't have to worry about a thing."</p>
+                        <h4 class="font-black uppercase tracking-wider text-sm text-white">— Sarah Jenkins</h4>
+                    </div>
+
+                    <div class="p-8 bg-dark-surface" style="border-radius: 20px; border-left: 2px solid var(--color-custom);">
+                        <div class="flex items-center gap-1 text-custom mb-4">
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">star</span>
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">star</span>
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">star</span>
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">star</span>
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">star</span>
+                        </div>
+                        <p class="text-secondary italic mb-6">"First class experience from start to finish. If you want to surf without the hassle of bringing your own boat, book this."</p>
+                        <h4 class="font-black uppercase tracking-wider text-sm text-white">— Dave R.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-24 bg-dark-surface fade-in-up">
             <div class="container max-w-md mx-auto">
                 <div class="text-center mb-12">
                     <h2 class="text-6xl italic text-custom mb-4">Send It</h2>
-                    <p class="text-muted font-medium">Ready to ride? Drop your coordinates.</p>
+                    <p class="text-muted font-medium">Ready to ride? Drop your info.</p>
                 </div>
                 <form>
                     <input class="form-input round-full" placeholder="NAME" type="text" required />
