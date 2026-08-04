@@ -1,0 +1,49 @@
+/* Custom layout & design system overrides */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.grit-overlay {
+    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.safety-card {
+    border-top: 4px solid #FF4D00;
+}
+
+/* Modal styling */
+.modal-overlay {
+    backdrop-filter: blur(4px);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-content {
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.modal-active .modal-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-active .modal-content {
+    transform: scale(1);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1B241D;
+}
+::-webkit-scrollbar-thumb {
+    background: #FF4D00;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #e04400;
+}
