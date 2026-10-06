@@ -124,6 +124,7 @@
             <div class="hidden md:flex items-center gap-8">
                 <a class="text-range-safety-orange border-b-2 border-range-safety-orange font-bold pb-1 font-body-md text-body-md" href="#">Home</a>
                 <a class="text-on-surface-variant hover:text-forest-deep transition-colors font-body-md text-body-md" href="#about">Welcome</a>
+                <a class="text-on-surface-variant hover:text-forest-deep transition-colors font-body-md text-body-md" href="#gallery">Gallery</a>
                 <a class="text-on-surface-variant hover:text-forest-deep transition-colors font-body-md text-body-md" href="#events">Events</a>
                 <a class="text-on-surface-variant hover:text-forest-deep transition-colors font-body-md text-body-md" href="#rules">Rules</a>
                 <a class="text-on-surface-variant hover:text-forest-deep transition-colors font-body-md text-body-md" href="#contact">Contact</a>
@@ -132,8 +133,8 @@
                 <a class="hidden lg:block" href="https://www.facebook.com/scpsrange" target="_blank">
                     <span class="material-symbols-outlined text-forest-deep hover:text-range-safety-orange transition-colors">rss_feed</span>
                 </a>
-                <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" class="bg-range-safety-orange text-white px-6 py-2 rounded-lg font-bold hover:scale-105 transition-transform">
-                    Donate
+                <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" class="bg-range-safety-orange text-white px-5 py-2 rounded-lg font-bold hover:scale-105 transition-transform">
+                    Recommended User Fee
                 </button>
                 <button id="mobile-menu-btn" class="md:hidden flex items-center">
                     <span class="material-symbols-outlined text-forest-deep">menu</span>
@@ -144,6 +145,7 @@
         <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-background border-b border-slate-stone/20 px-gutter py-6 flex flex-col gap-4 shadow-lg z-40">
             <a class="text-forest-deep font-bold font-body-md text-body-md" href="#">Home</a>
             <a class="text-on-surface-variant hover:text-forest-deep transition-colors font-body-md text-body-md" href="#about">Welcome</a>
+            <a class="text-on-surface-variant hover:text-forest-deep transition-colors font-body-md text-body-md" href="#gallery">Gallery</a>
             <a class="text-on-surface-variant hover:text-forest-deep transition-colors font-body-md text-body-md" href="#events">Events</a>
             <a class="text-on-surface-variant hover:text-forest-deep transition-colors font-body-md text-body-md" href="#rules">Rules</a>
             <a class="text-on-surface-variant hover:text-forest-deep transition-colors font-body-md text-body-md" href="#contact">Contact</a>
@@ -153,7 +155,7 @@
     <!-- Hero Section -->
     <section class="relative min-h-screen flex items-center">
         <div class="absolute inset-0 z-0">
-            <img class="w-full h-full object-cover brightness-75" src="https://lh3.googleusercontent.com/aida/AP1WRLsdbinPu2V5BU1FKVFQfsABfBZz2lrjC45ppU6ruGDOxXYh4bzJmKOMW5kBl8JTPPAbuXSLgRuYl8FAdX_GXalmzrQyV4heLXIQJFIxV-zVrLtESu9m8ajDUs9AtAVGDWYUPm5QKWX-RRM9Gc2pe7S0EpEMZ9t0fmnJchjSqacqUMxnDWrigfrUQ1nyQu44qhIxqz551C98rBTFMcEwGlXyCfO3S0aBQMujhYAPDYwqnCeEGIg1rDYyaqc"/>
+            <img id="hero-bg-img" class="w-full h-full object-cover brightness-75 transition-opacity duration-700" src="images/backgrounds/hero-bg.jpg" onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/aida/AP1WRLsdbinPu2V5BU1FKVFQfsABfBZz2lrjC45ppU6ruGDOxXYh4bzJmKOMW5kBl8JTPPAbuXSLgRuYl8FAdX_GXalmzrQyV4heLXIQJFIxV-zVrLtESu9m8ajDUs9AtAVGDWYUPm5QKWX-RRM9Gc2pe7S0EpEMZ9t0fmnJchjSqacqUMxnDWrigfrUQ1nyQu44qhIxqz551C98rBTFMcEwGlXyCfO3S0aBQMujhYAPDYwqnCeEGIg1rDYyaqc';" alt="Shoshone County Public Shooting Range Hero Background"/>
             <div class="absolute inset-0 bg-gradient-to-r from-forest-deep/80 to-transparent"></div>
             <div class="grit-overlay absolute inset-0"></div>
         </div>
@@ -192,16 +194,16 @@
                         <span class="material-symbols-outlined text-range-safety-orange text-4xl">account_balance</span>
                         <div>
                             <h3 class="font-headline-md text-headline-md text-forest-deep">A 100% Non-Profit Venture</h3>
-                            <p class="font-body-md text-body-md mt-2 text-on-surface-variant">We are a free non-profit range funded entirely by user generosity. We receive zero county funding, relying on brass donations, grants, and your site contributions.</p>
+                            <p class="font-body-md text-body-md mt-2 text-on-surface-variant">We are a non-profit range funded entirely by user generosity. We receive zero county funding, relying on recommended user fees, grants, and community support.</p>
                         </div>
                     </div>
                     <div class="bg-primary-container p-6 rounded-lg text-white border-l-4 border-range-safety-orange">
                         <p class="font-bold flex items-center gap-2">
                             <span class="material-symbols-outlined">payments</span>
-                            Recommended $5.00 donation per shooter
+                            Recommended user fee: $5.00 per shooter
                         </p>
                     </div>
-                    <p class="font-body-md text-body-md text-on-surface-variant">We now offer professional-grade eye and ear protection for a small donation of $2.00 on-site. Your support keeps the range open, clean, and safe for everyone.</p>
+                    <p class="font-body-md text-body-md text-on-surface-variant">We now offer professional-grade eye and ear protection for a small recommended user fee of $2.00 on-site. Your support keeps the range open, clean, and safe for everyone.</p>
                 </div>
             </div>
         </div>
@@ -334,6 +336,76 @@
         </div>
     </div>
 
+    <!-- Photo Gallery -->
+    <section class="py-section-gap bg-surface" id="gallery">
+        <div class="max-w-container-max mx-auto px-gutter">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+                <div>
+                    <div class="flex items-center gap-2 text-range-safety-orange font-bold uppercase tracking-wider text-xs mb-2">
+                        <span class="material-symbols-outlined text-base">photo_library</span>
+                        <span>Photo Gallery</span>
+                    </div>
+                    <h2 class="font-headline-lg text-headline-lg text-forest-deep">Explore Our Shooting Range</h2>
+                    <p class="text-on-surface-variant mt-2 max-w-xl">Take a visual tour of our facilities, target lanes, archery range, and stunning Idaho mountain backdrop.</p>
+                </div>
+                <!-- Category Filters -->
+                <div id="gallery-filters" class="flex flex-wrap gap-2">
+                    <button data-filter="all" class="gallery-filter-btn active px-4 py-2 rounded-full font-bold text-xs transition-all bg-forest-deep text-white shadow">
+                        All Photos
+                    </button>
+                    <button data-filter="rifle" class="gallery-filter-btn px-4 py-2 rounded-full font-bold text-xs transition-all bg-white border border-slate-stone/20 text-forest-deep hover:bg-forest-deep/10">
+                        Rifle Range
+                    </button>
+                    <button data-filter="pistol" class="gallery-filter-btn px-4 py-2 rounded-full font-bold text-xs transition-all bg-white border border-slate-stone/20 text-forest-deep hover:bg-forest-deep/10">
+                        Pistol Bays
+                    </button>
+                    <button data-filter="archery" class="gallery-filter-btn px-4 py-2 rounded-full font-bold text-xs transition-all bg-white border border-slate-stone/20 text-forest-deep hover:bg-forest-deep/10">
+                        Archery Range
+                    </button>
+                    <button data-filter="facility" class="gallery-filter-btn px-4 py-2 rounded-full font-bold text-xs transition-all bg-white border border-slate-stone/20 text-forest-deep hover:bg-forest-deep/10">
+                        Scenery & Facilities
+                    </button>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery cards injected dynamically by app.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Lightbox Modal -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 flex items-center justify-center hidden">
+        <div id="lightbox-backdrop" class="absolute inset-0 bg-black/90 backdrop-blur-md"></div>
+        <div class="relative z-10 max-w-5xl w-full mx-4 flex flex-col items-center">
+            <!-- Close Button -->
+            <button id="close-lightbox-btn" class="absolute -top-12 right-0 text-white/80 hover:text-white transition-colors flex items-center gap-1 font-bold text-sm bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-full">
+                <span class="material-symbols-outlined text-lg">close</span> Close
+            </button>
+            <!-- Image & Controls Container -->
+            <div class="relative w-full flex items-center justify-center">
+                <!-- Prev Button -->
+                <button id="lightbox-prev-btn" class="absolute left-2 md:-left-12 z-20 text-white bg-black/50 hover:bg-range-safety-orange transition-colors p-3 rounded-full flex items-center justify-center backdrop-blur-sm shadow-lg">
+                    <span class="material-symbols-outlined text-2xl">chevron_left</span>
+                </button>
+                <!-- Main Image -->
+                <div class="overflow-hidden rounded-2xl max-h-[75vh] flex items-center justify-center bg-black/40 border border-white/10 shadow-2xl">
+                    <img id="lightbox-image" src="" alt="" class="max-h-[75vh] w-auto object-contain transition-all duration-300" />
+                </div>
+                <!-- Next Button -->
+                <button id="lightbox-next-btn" class="absolute right-2 md:-right-12 z-20 text-white bg-black/50 hover:bg-range-safety-orange transition-colors p-3 rounded-full flex items-center justify-center backdrop-blur-sm shadow-lg">
+                    <span class="material-symbols-outlined text-2xl">chevron_right</span>
+                </button>
+            </div>
+            <!-- Lightbox Info (Title & Counter) -->
+            <div class="mt-4 text-center text-white space-y-1">
+                <span id="lightbox-counter" class="text-white/80 text-xs font-label-caps bg-black/50 px-3 py-1 rounded-full backdrop-blur-sm border border-white/10"></span>
+                <h4 id="lightbox-title" class="font-headline-lg text-lg md:text-xl font-bold pt-1"></h4>
+            </div>
+        </div>
+    </div>
+
     <!-- Contact & Location -->
     <section class="py-section-gap bg-surface-container overflow-hidden" id="contact">
         <div class="max-w-container-max mx-auto px-gutter">
@@ -341,7 +413,7 @@
                 <div class="space-y-12">
                     <div>
                         <h2 class="font-headline-lg text-headline-lg text-forest-deep mb-4">Get in Touch</h2>
-                        <p class="text-on-surface-variant">Questions about lane availability, brass donations, or upcoming events? Our board of directors is here to help.</p>
+                        <p class="text-on-surface-variant">Questions about lane availability, recommended user fees, or upcoming events? Our board of directors is here to help.</p>
                     </div>
                     <div class="grid sm:grid-cols-2 gap-8">
                         <div>
